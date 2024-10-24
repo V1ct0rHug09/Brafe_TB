@@ -84,6 +84,7 @@ body{
 
 .sobre{
     padding: 60px 0;
+    flex: 1;
 }
 
 .sobre h2{
