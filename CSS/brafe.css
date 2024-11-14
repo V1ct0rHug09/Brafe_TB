@@ -1,4 +1,5 @@
 /* RESET */
+
 body, h1, h2, h3, p, ul{
     padding: 0;
     margin: 0;
@@ -52,14 +53,14 @@ body{
 .menu-nav ul li a{
     padding: 10px;
 }
-/* Banner */
 
+/* Banner */
 .intro{
     background-image: url(../img/bg-intro.jpg);
-    padding: 150px 0;
-    color: white;
-    text-align: center;
     background-size: cover;
+    padding: 150px 0;
+    color: #fff;
+    text-align: center;
 }
 .intro h2{
     text-transform: uppercase;
@@ -68,23 +69,21 @@ body{
 
 .intro p{
     font-style: italic;
-    font-size: 1.125em;
+    font-size:1.125em;
 }
 
-.intro h2:after{
-    content: "";
+.intro h2::after{
+    content: '';
     display: block;
     width: 20px;
     height: 4px;
     background-color: #fff;
-    margin: 10px  auto;
+    margin: 10px auto;
 }
 
 /* Sobre */
-
 .sobre{
     padding: 60px 0;
-    flex: 1;
 }
 
 .sobre h2{
@@ -94,6 +93,7 @@ body{
 }
 
 .sobre-item{
+    flex: 1;
     margin: 0 10px;
 }
 
@@ -101,7 +101,6 @@ body{
     display: block;
     max-width: 100%;
 }
-
 .sobre-item h3{
     font-size: 2.25em;
     background-color: #252525;
@@ -113,7 +112,7 @@ body{
     line-height: 1em;
     font-weight: normal;
     position: relative;
-    top: -25px;
+    top:-25px;
 }
 .sobre > p{
     font-size: 1.125em;
@@ -126,9 +125,9 @@ body{
 
 /* Produtos */
 .produtos{
-    background-color: #e7e4e8;
+    background-color:#e7e4e8;
     border-top: 3px solid #d6d3c8;
-    border-bottom: 3px solid #d6d3c8 ;
+    border-bottom: 3px solid #d6d3c8;
     padding: 60px 0;
 }
 
@@ -144,7 +143,7 @@ body{
 }
 
 .produtos-item h2::before{
-    content: '';
+    content:'';
     display: block;
     width: 100px;
     height: 100px;
@@ -158,12 +157,10 @@ body{
 h2.produtos-paulista::before{
     color: #492901;
 }
-
-h2.produtos-mineiro::before{
+h2.produtos-carioca::before{
     color: #c17139;
 }
-
-h2.produtos-carioca::before{
+h2.produtos-mineiro::before{
     color: #d7a54d;
 }
 
@@ -178,9 +175,120 @@ h2.produtos-carioca::before{
     text-decoration: none;
     text-align: center;
     font-size: 1.125em;
+    font-weight: bold;
     text-transform: uppercase;
-    display:block;
+    display: block;
     width: 180px;
     padding: 15px 0;
     margin: 20px auto;
+}
+
+/* Localidades */
+
+.locais{
+    padding: 60px 0;
+}
+
+.locais-item{
+    margin-bottom: 40px;
+}
+.locais-img, .locais-info{
+    flex:1;
+    margin: 0 10px;
+}
+
+.locais-img img{
+    display: block;
+    max-width: 100%;
+}
+
+.locais-item h2{
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+.locais-item p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+.locais-item a{
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid;
+    color: #252525;
+    padding: 10px 20px;
+}
+/* Assine */
+.assine{
+    background-color: #e7e4d8;
+    padding: 30px 0;
+
+}
+
+.assine-info{
+    flex: 1;
+    margin: 0 10px;
+}
+
+.assine-info h2{
+    font-size: 2.25em;
+}
+
+.assine-info p{
+    font-size: 1.5em;
+    font-style: italic;
+}
+ .assine form{
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+ }
+
+.assine form label{
+    display: none;
+}
+
+.assine input{
+    flex: 1;
+    align-self: flex-start;
+    padding: 10px;
+    border: 3px solid #252525;
+    background-color: none;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: Georgia, serif;
+}
+
+.assine button{
+    flex: 1;
+    align-self: flex-start;
+    padding: 13px;
+    background-color: #252525;
+    border: none;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    font-size:  1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    background-color: #d6d3c8;
+    padding: 40px 0;
+}
+
+.footer-img{
+    margin:0 10px;
+    padding: 0 100px;
+}
+
+.footer p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    flex: 1;
 }
